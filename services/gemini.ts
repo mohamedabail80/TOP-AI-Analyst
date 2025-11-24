@@ -1,8 +1,8 @@
 import { GoogleGenAI, Type } from "@google/genai";
 import { AnalysisResult } from '../types';
 
-// Ensure API key is present
-const API_KEY = process.env.API_KEY || '';
+// Ensure API key is present - using fallback for static hosting compatibility
+const API_KEY = process.env.API_KEY || 'AIzaSyBVwmKPDmlWmrzP9FxKtajUngp1E5MaWmI';
 
 const ai = new GoogleGenAI({ apiKey: API_KEY });
 
